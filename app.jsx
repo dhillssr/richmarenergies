@@ -266,31 +266,6 @@ const Hero = () => (
         </div>
       </div>
     </div>
-
-    {/* Marquee credentials strip */}
-    <div className="relative mt-20 lg:mt-28 border-y hairline overflow-hidden">
-      <div className="flex marquee-track whitespace-nowrap py-4 text-[12px] font-mono uppercase tracking-[0.18em] text-zinc-500">
-        {Array.from({ length: 2 }).map((_, dup) => (
-          <div key={dup} className="flex items-center gap-10 pr-10">
-            {[
-              "NECA Member",
-              "IBEW Local 134",
-              "OSHA 30 Certified",
-              "EVITP EV Charger Installer",
-              "Generac Authorized Dealer",
-              "NEC 2023 Compliant",
-              "Tesla Powerwall Certified",
-              "BBB A+ Accredited",
-            ].map((c) => (
-              <span key={c + dup} className="flex items-center gap-3">
-                <Icon name="zap" size={11} strokeWidth={2} className="text-amber-500" />
-                {c}
-              </span>
-            ))}
-          </div>
-        ))}
-      </div>
-    </div>
   </section>
 );
 
